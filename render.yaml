@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: firefly-science
+    runtime: static
+    staticPublishDir: .
+    buildCommand: "echo 'No build step required for static site'"
+    envVars:
+      - key: NODE_VERSION
+        value: 20
